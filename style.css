@@ -25,6 +25,7 @@ body {
     width: 62px;
     height: 62px;
     border: 2px solid black;
+    box-sizing: border-box;
     
 }
 

@@ -12,7 +12,6 @@ function makeRows() {
             c.className = 'grid'
            
         };
-        container.appendChild(grid)  
         
 
     };
@@ -24,16 +23,6 @@ function makeRows() {
 
 
 makeRows()
-
-
-// for (let i = 0; i < 0; i++) {
-//     let grid = document.createElement('div')
-//     document.body.appendChild(grid)
-//     div.textContent = i
-
-//     }
-
-
 
 
 
