@@ -1,0 +1,30 @@
+body {
+    background-color: red;
+    display: grid;
+  
+ 
+}
+
+#outer {
+    position: relative;
+    top: 30;
+    outline: none;
+    font-size: 0;
+    margin: auto;
+    height: 992px;
+    width:992px;
+    
+   
+}
+   
+.grid {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid #000;
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border: 2px solid black;
+    
+}
+
