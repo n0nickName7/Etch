@@ -26,6 +26,22 @@ body {
     height: 62px;
     border: 2px solid black;
     box-sizing: border-box;
+
     
 }
 
+button {
+    color: green;
+    background-color: brown;
+    height: 50px;
+    width: 100px;
+   
+  }
+  
+
+  #top {
+    display: flex;
+    justify-content: center;
+    
+  }
+  

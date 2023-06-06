@@ -1,4 +1,14 @@
 const container = document.getElementById('outer')
+const t = document.getElementById('top')
+
+const btn = document.createElement('button');
+btn.innerText = 'restart?'
+t.appendChild(btn)
+
+
+// const buttonCont = document.createElement('div') 
+// buttonCont.id = 'cont'
+
 let grid = document.createElement('div');
 grid.className = 'grid';
 
@@ -31,4 +41,3 @@ container.addEventListener('mouseover', function (event) {
   });
 
 
-    
