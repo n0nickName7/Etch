@@ -1,10 +1,9 @@
 const container = document.getElementById('outer')
-
-
+let grid = document.createElement('div');
+grid.className = 'grid';
 
 function makeRows() {
-    let grid = document.createElement('div');
-    grid.className = 'grid';
+
     for (var rows = 0; rows < 16; rows++) {
         for (var cols = 0; cols < 16; cols++) {
             let c = document.createElement('div')
@@ -24,6 +23,12 @@ function makeRows() {
 
 makeRows()
 
+
+document.querySelector('.grid')
+
+container.addEventListener('mouseover', function (event) {
+   event.target.style.background = 'black'
+  });
 
 
     
