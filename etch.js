@@ -1,43 +1,46 @@
+
+
 const container = document.getElementById('outer')
 const t = document.getElementById('top')
 
 const btn = document.createElement('button');
-btn.innerText = 'restart?'
+btn.innerText = 'Restart'
 t.appendChild(btn)
 
-
-// const buttonCont = document.createElement('div') 
-// buttonCont.id = 'cont'
 
 let grid = document.createElement('div');
 grid.className = 'grid';
 
-function makeRows() {
+function makeRows(x) {
 
-    for (var rows = 0; rows < 16; rows++) {
-        for (var cols = 0; cols < 16; cols++) {
+    for (var rows = 0; rows < x; rows++) {
+        for (var cols = 0; cols < x; cols++) {
             let c = document.createElement('div')
             container.appendChild(c)
             c.className = 'grid'
            
         };
+        grid.width = (992/x)
+        grid.height= (992/x)
         
-
     };
     
-    // document.getElementsByClassName('grid').width = (960/x)
-    // document.getElementsByClassName('grid').height = (960/x)
+  
 };
 
-
-
-makeRows()
+makeRows(16)
 
 
 document.querySelector('.grid')
 
 container.addEventListener('mouseover', function (event) {
-   event.target.style.background = 'black'
+   event.target.style.background = 'pink'
   });
+
+
+btn.addEventListener('click', function() {
+  container.remove()
+  let x = prompt('how many squares do you want?')
+})
 
 
