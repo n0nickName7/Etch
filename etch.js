@@ -1,37 +1,41 @@
-
-
 const container = document.getElementById('outer')
 const t = document.getElementById('top')
 
 const btn = document.createElement('button');
 btn.innerText = 'Restart'
-t.appendChild(btn)
-
-
-let grid = document.createElement('div');
-grid.className = 'grid';
+t.appendChild(btn);
 
 function makeRows(x) {
-
-    for (var rows = 0; rows < x; rows++) {
-        for (var cols = 0; cols < x; cols++) {
-            let c = document.createElement('div')
-            container.appendChild(c)
-            c.className = 'grid'
-           
+  if (x > 100) {
+    alert('enter a lower number')
+  }
+    for (let rows = 0; rows < x; rows++) {
+        for (let cols = 0; cols < x; cols++) {
+          let grid = document.createElement('div')
+          grid.className = 'grid'
+          container.appendChild(grid)
         };
-        grid.width = (992/x)
-        grid.height= (992/x)
-        
+   
     };
-    
-  
+    $(".grid").width(992/x);
+    $(".grid").height(992/x);
+
 };
 
-makeRows(16)
+
+makeRows(18)
 
 
 document.querySelector('.grid')
+
+function clearGrid() {
+  $('.grid').remove();
+}
+
+function newGrid() {
+  let e = prompt('how many squares?')
+  makeRows(e)
+}
 
 container.addEventListener('mouseover', function (event) {
    event.target.style.background = 'pink'
@@ -39,8 +43,7 @@ container.addEventListener('mouseover', function (event) {
 
 
 btn.addEventListener('click', function() {
-  container.remove()
-  let x = prompt('how many squares do you want?')
+  clearGrid()
+  newGrid()
 })
-
 

@@ -1,49 +1,45 @@
 body {
-    background-color: purple;
-    display: grid;
+  background-color: purple;
 }
 
 #outer {
-    position: relative;
-    top: 30;
-    outline: 2px solid #000;
-    font-size: 0;
-    margin: auto;
-    height: 992px;
-    width: 992px;
-  	padding: 0;
-	  border: none;
-    
-   
+position: relative;
+top: 30px;
+outline:2px solid #000;
+font-size: 0;
+margin:auto;
+height:992px;
+width:992px;
+padding: 0;
+border: none; 
+
 }
-   
+ 
+ 
 .grid {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: 1px solid #000;
-    display: inline-block;
-    width: 62px;
-    height: 62px;
-    box-sizing: border-box;
-    
+margin:0;
+padding:0;
+outline:none;
+box-sizing: border-box;
+display: inline-block;
+
 }
 
 
 button {
-  color: pink;
-  background-color: black;
-  height: 50px;
-  width: 100px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: 20px;
-  font-family: cursive;
- 
+color: pink;
+background-color: black;
+height: 50px;
+width: 100px;
+margin-bottom: 50px;
+margin-top: 50px;
+font-size: 20px;
+font-family: cursive;
+
 }
 
 #top {
-  display: flex;
-  justify-content: center;
-  
+display: flex;
+justify-content: center;
+
 }
