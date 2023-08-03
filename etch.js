@@ -2,7 +2,7 @@ const container = document.getElementById('outer')
 const t = document.getElementById('top')
 
 const btn = document.createElement('button');
-btn.innerText = 'Restart'
+btn.innerText = 'Reset'
 t.appendChild(btn);
 
 function makeRows(x) {
@@ -36,6 +36,7 @@ function newGrid() {
   let e = prompt('how many squares?')
   makeRows(e)
 }
+
 
 container.addEventListener('mouseover', function (event) {
    event.target.style.background = 'pink'
